@@ -12,7 +12,7 @@ function MovieDetail() {
     const fetchMovieDetails = async () => {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?i=${id}&apikey=583b73fe`
+          `https://www.omdbapi.com/?i=${id}&apikey=583b73fe`
         );
         setMovie(response.data);
 

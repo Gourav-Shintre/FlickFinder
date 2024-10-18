@@ -9,7 +9,7 @@ function DetailedView() {
   useEffect(() => {
     const fetchFullMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=583b73fe`);
+        const response = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=583b73fe`);
         setMovie(response.data);
       } catch (error) {
         console.error("Error fetching movie details:", error);

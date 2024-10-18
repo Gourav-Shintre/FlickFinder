@@ -12,7 +12,7 @@ const moviesId=[
 const fetchMovies = async ()=>{
  try {
   const moviepromise = moviesId.map((id)=>{
-    return axios.get(`http://www.omdbapi.com/?i=${id}&apikey=${OMDB_API_KEY}`)
+    return axios.get(`https://www.omdbapi.com/?i=${id}&apikey=${OMDB_API_KEY}`)
 
   })
   const response = await Promise.all(moviepromise)

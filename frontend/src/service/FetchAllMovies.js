@@ -4,10 +4,10 @@ const fetchAllMovies = async (searchTerm, searchType) => {
   let url = "";
   switch (searchType) {
     case "title":
-      url = `http://www.omdbapi.com/?s=${encodeURIComponent(searchTerm)}&apikey=${apiKey}`;
+      url = `https://www.omdbapi.com/?s=${encodeURIComponent(searchTerm)}&apikey=${apiKey}`;
       break;
     case "genre":
-      url = `http://www.omdbapi.com/?s=${encodeURIComponent(searchTerm)}&type=movie&apikey=${apiKey}`;
+      url = `https://www.omdbapi.com/?s=${encodeURIComponent(searchTerm)}&type=movie&apikey=${apiKey}`;
       break;
     default:
       throw new Error("Invalid search type");
