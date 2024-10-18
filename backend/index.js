@@ -13,6 +13,9 @@ const PORT = process.env.PORT || 8000;
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/auth', AuthRouter); 
+app.get('/', (req, res) => {
+    res.send("welcome ");
+});
 
 // Connect to MongoDB
 connectDB(); // Call the function to establish the connection
