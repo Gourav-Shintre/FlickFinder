@@ -1,0 +1,6 @@
+/* In Header.css or another relevant CSS file */
+.mobile-menu {
+  z-index: 999; /* Ensure the mobile menu appears on top of other elements */
+}
+
+
