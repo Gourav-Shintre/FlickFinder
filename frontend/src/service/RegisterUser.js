@@ -1,6 +1,6 @@
 import axios from "axios";
 const registerUser =async(name,email,password)=>{
-  const url ="http://localhost:8000/auth/signup"
+  const url ="https://backend-flickfinder.vercel.app/auth/signup"
   try {
     const response = await axios.post(url,{name,email,password},
       {
